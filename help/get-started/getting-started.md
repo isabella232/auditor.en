@@ -1,6 +1,6 @@
 ---
-description: null
-seo-description: null
+description: Get started with Auditor
+seo-description: Get started with Auditor
 seo-title: Getting started
 title: Getting started
 uuid: 999e0142-5a64-4202-ae09-58d22438ded7
