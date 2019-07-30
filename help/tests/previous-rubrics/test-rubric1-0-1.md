@@ -4,9 +4,7 @@ seo-description: null
 seo-title: Test rubric 1.0.1
 title: Test rubric 1.0.1
 uuid: 2ed2572e-ddb8-4899-b3a9-1329afdd7905
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Test rubric 1.0.1{#test-rubric}

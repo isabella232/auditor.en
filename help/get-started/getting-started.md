@@ -4,9 +4,7 @@ seo-description: null
 seo-title: Getting started
 title: Getting started
 uuid: 999e0142-5a64-4202-ae09-58d22438ded7
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Getting started{#getting-started}

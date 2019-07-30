@@ -4,9 +4,7 @@ seo-description: The report shows whether each URL passes or fails.
 seo-title: Download report
 title: Download report
 uuid: cd5c4db8-e647-4311-9abb-98dd3bbc7ef8
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Download report{#download-report}

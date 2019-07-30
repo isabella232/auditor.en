@@ -4,9 +4,7 @@ seo-description: This reference provides more information about the tests Audito
 seo-title: Configuration
 title: Configuration
 uuid: d40d815c-edfe-48b9-921f-cea1b0b54a0a
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Configuration{#configuration}

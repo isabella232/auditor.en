@@ -4,9 +4,7 @@ seo-description: This reference provides more information about the tests Audito
 seo-title: Test reference
 title: Test reference
 uuid: f1d0769e-a2bd-4cec-acd1-146793644895
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Test reference{#test-reference}

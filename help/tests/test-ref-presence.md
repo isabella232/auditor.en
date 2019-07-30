@@ -4,9 +4,7 @@ seo-description: This reference provides more information about the tests Audito
 seo-title: Tag presence
 title: Tag presence
 uuid: 91aa355b-7022-431c-9837-e108b5ce604d
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Tag presence{#tag-presence}

@@ -1,13 +1,13 @@
 ---
 cloud: experience-cloud
-product: adobe
+product: adobe experience cloud
 archtype: end-user
-user-guide: null
+user-guide-title: Experience Cloud Auditor Help
 ---
 
-# Table of Contents {#table-of-contents}
+# Table of Contents {#using}
 
-+ [Adobe Experience Cloud Auditor](auditor.md)
++ [Overview](overview.md)
 + [Auditor release notes](release-notes.md)
 + [Auditor FAQ](auditor-faq.md)
 + [Get started](get-started/get-started.md)

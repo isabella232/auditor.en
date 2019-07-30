@@ -4,9 +4,7 @@ seo-description: null
 seo-title: Create a new audit
 title: Create a new audit
 uuid: bd6798bb-3fab-4091-9e07-d3d1e5fdd087
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Create a new audit{#create-a-new-audit}

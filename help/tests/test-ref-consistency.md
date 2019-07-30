@@ -4,9 +4,7 @@ seo-description: This reference provides more information about the tests Audito
 seo-title: Tag consistency
 title: Tag consistency
 uuid: 16271dd6-3587-4f33-92f8-54ec4a3d6469
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Tag consistency{#tag-consistency}

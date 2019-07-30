@@ -4,9 +4,7 @@ seo-description: This reference provides more information about the alerts Audit
 seo-title: Alerts
 title: Alerts
 uuid: 8f05b3c1-2427-4691-a88f-1de98f120a02
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Alerts{#alerts}

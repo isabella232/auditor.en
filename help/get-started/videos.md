@@ -4,9 +4,7 @@ seo-description: null
 seo-title: Auditor videos
 title: Auditor videos
 uuid: 920c0385-158f-4c9c-be72-c48defaaa798
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Auditor videos{#auditor-videos}
