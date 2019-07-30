@@ -1,8 +1,8 @@
 ---
-description: null
-seo-description: null
-seo-title: Create a new audit
-title: Create a new audit
+description: Create a new audit in Auditor
+seo-description: Create a new audit in Auditor
+seo-title: Create a new audit in Auditor
+title: Create a new audit in Auditor
 uuid: bd6798bb-3fab-4091-9e07-d3d1e5fdd087
 
 ---
