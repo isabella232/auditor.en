@@ -26,6 +26,6 @@ user-guide-title: Experience Cloud Auditor Help
    + [Tag consistency](tests/test-ref-consistency.md)
    + [Configuration](tests/test-ref-cfg.md)
    + [Alerts](tests/test-ref-alerts.md)
-   + {Previous test rubrics{#previous-rubrics)
+   + Previous test rubrics{#previous-rubrics}
       + [Test rubric 1.0.1](tests/previous-rubrics/test-rubric1-0-1.md)
       + [Test rubric 0.0.8](tests/previous-rubrics/test-rubric1-0.md)
