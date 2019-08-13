@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
 product: adobe experience cloud
-archtype: end-user
+archetype: end-user
 user-guide-title: Experience Cloud Auditor Help
 ---
 
