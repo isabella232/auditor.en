@@ -11,7 +11,7 @@ uuid: 16271dd6-3587-4f33-92f8-54ec4a3d6469
 
 This reference provides more information about the tests Auditor performs for tag consistency.
 
-## Tag consistency {#topic-a65cca9b5a294706b4069a93bc9c9d76}
+## Tag consistency {#tag-consistency}
 
 This reference provides more information about the tests Auditor performs for tag consistency. 
 

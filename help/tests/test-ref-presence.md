@@ -11,7 +11,7 @@ uuid: 91aa355b-7022-431c-9837-e108b5ce604d
 
 This reference provides more information about the tests Auditor performs for tag presence.
 
-## Tag presence {#topic-10aeb8b878044ab38b815cabe136df1e}
+## Tag presence {#tag-presence}
 
 This reference provides more information about the tests Auditor performs for tag presence. 
 

@@ -11,7 +11,7 @@ uuid: 8f05b3c1-2427-4691-a88f-1de98f120a02
 
 This reference provides more information about the alerts Auditor displays for tests.
 
-## Alerts {#topic-1336e3975278436583e4215aa48f08a5}
+## Alerts {#alerts}
 
 This reference provides more information about the alerts Auditor displays for tests. 
 
