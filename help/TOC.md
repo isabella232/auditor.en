@@ -17,9 +17,9 @@ user-guide-title: Experience Cloud Auditor Help
    + [Include and Exclude filters](create-audit/filters.md)
 + Reports {#reports}
    + [Scorecard](reports/scorecard.md)
-   + [Download report](reports/t-download-report.md)
+   + [Download report](reports/download-report.md)
 + Tests {#tests}
-   + [Test reference](tests/r-test-reference.md)
+   + [Test reference](tests/test-reference.md)
    + [Tag presence](tests/test-ref-presence.md)
    + [Tag consistency](tests/test-ref-consistency.md)
    + [Configuration](tests/test-ref-cfg.md)
