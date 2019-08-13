@@ -40,77 +40,21 @@ This reference provides more information about the tests Auditor performs for co
 
 Auditor evaluates the tags against other rules and recommended best practices.
 
-<table id="table_A8A1FC360482447185C8460A18426638"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Test </th> 
-   <th colname="col2" class="entry"> Criteria </th> 
-   <th colname="col3" class="entry"> Recommendation </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>Advertising Cloud - Conversion names use only alpha-numeric characters</b> </p> <p>Weight: 3 </p> </td> 
-   <td colname="col2"> <p>The <span class="codeph"> ev_conversion_property_name</span> parameter should only contain numeric and decimal values EXCEPT for "<span class="codeph"> ev_transid</span>" parameter (the <span class="codeph"> ev_transid</span> value can contain text or numeric values) </p> <p>Look for <span class="codeph"> everesttech.net</span> pixels that contain a URL parameter starting with <span class="codeph"> ev_</span>. </p> <p>Example: </p> <p><span class="codeph"> http://pixel.everesttech.net/1180/t?ev_page_load=1&amp;ev_revenue=$12&amp;ev_transid=1hf74i47</span> </p> </td> 
-   <td colname="col3"> <p> Make sure your transaction property parameters only contain numeric and decimal values. </p> <p> <p>Warning:  Any other value types might cause data loss. </p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Advertising Cloud - Conversion names use URL-safe characters</b> </p> <p>Weight: 3 </p> </td> 
-   <td colname="col2"> <p> Conversion property names should not contain an ampersand or question mark. </p> <p> Example: </p> <p><span class="codeph"> http://pixel.everesttech.net/1180/t?ev_revenue&amp;order=12&amp;ev_transid=</span> </p> </td> 
-   <td colname="col3"> <p>Make sure transaction property parameters do not contain a non-encoded ampersand or question mark. These break the URL format. </p> <p> <p>Warning: Property parameters that contain a non-encoded ampersand or question mark, (for example: <span class="codeph"> ev_formComplete?=1</span> or <span class="codeph"> ev_formComplete&amp;Submit=1</span>), might result in data loss. </p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Advertising Cloud - Transaction ID Implemented Correctly</b> </p> <p>Weight: 1 </p> </td> 
-   <td colname="col2"> <p> The property name <span class="codeph"> ev_transid=</span> should not be empty. </p> <p>Example: </p> <p><span class="codeph"> http://pixel.everesttech.net/1180/t?ev_page_load=1&amp;ev_revenue= 12&amp; ev_transid=</span> </p> </td> 
-   <td colname="col3"> <p>The property name <span class="codeph"> ev_transid=</span> should not be left without a value (<span class="codeph"> ev_transid=</span>). If this is left without a value, there could be transaction data loss. Assign a value to the <span class="codeph"> ev_transid=</span> or remove the parameter from the pixel. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Analytics - Instantiated in DOM</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/sc/implement/impl_testing.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> The Adobe Analytics code is either not installed or failing to execute. Returns 0 when no analytics code is found web page. </p> </td> 
-   <td colname="col3"> <p>Verify that the Analytics tag is implemented on the page and is not blocked by subsequent script activities. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Analytics - Instantiated once</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/sc/implement/" format="https" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> The Adobe Analytics code was detected more than once on the page. . Returns 0 when no analytics code is found web page. </p> </td> 
-   <td colname="col3"> <p>Make sure there is only one Analytics tag on the page. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Analytics - Latest version</b> </p> <p>Weight: 3 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/sc/appmeasurement/release" format="https" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> Your pages are not running the latest version of the Analytics code library. Code libraries that power Experience Cloud technologies are constantly being updated and tweaked in order to take advantage of performance improvements and provide the latest features. Returns 0 when no analytics code is found web page. </p> </td> 
-   <td colname="col3"> <p>Install the latest version of the Analytics library. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>DTM - Self-Hosted</b> </p> <p>Weight: 4 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/deployment.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> The DTM library is being hosted on Adobe's Akamai instance at <span class="filepath"> assets.adobedtm.com</span>. </p> <p> Self-hosting is the recommended approach for loading DTM because it provides greater control of website performance through cache control, reducing third-party script dependencies, and greater control of the publishing process. The DTM libraries can be hosted and managed through your own web hosting or CDN. </p> </td> 
-   <td colname="col3"> <p>Self-hosting is the recommended approach for loading DTM on a page. Although DTM hosting via the Akamai CDN works in most cases, self-hosting improves page performance. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>DTM - Third-party tags load asynchronously after DOM ready</b> </p> <p>Weight: 3 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/load_order.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p>To strike a balance between a good user experience and collecting accurate data, 3rd party tags should be triggered at DOM ready. This will ensure that those tracking scripts execute while not impacting site functionality. </p> </td> 
-   <td colname="col3"> <p>Resolve this issue by adjusting all rules that execute 3rd party pixels to fire at DOM Ready. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Experience Cloud ID Service - Latest Version</b> </p> <p>Weight: 2 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/macid.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> Your pages are not running the latest version of the Visitor ID Service code library, <span class="codeph"> visitorAPI.js</span>. Code libraries that power Experience Cloud technologies are constantly being updated and tweaked in order to take advantage of performance improvements and provide the latest features. </p> </td> 
-   <td colname="col3"> <p>Install the latest version of the Visitor ID service library. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Target - Latest version</b> </p> <p>Weight: 2 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/target/dtm/update-target-tool.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> Your pages are not running the latest version of the Target code library. Code libraries that power Experience Cloud technologies are constantly being updated and tweaked in order to take advantage of performance improvements and provide the latest features. </p> </td> 
-   <td colname="col3"> <p>Install the latest version of the Target library. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Target - mboxDefault precedes mboxCreate </b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/target/ov2/r_target-atjs-mboxcreate.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p>The proper use of <span class="codeph"> mboxCreate</span> looks similar to this: </p> <p> <span class="codeph"> &lt;div class="mboxDefault"&gt;&lt;!-Customer content--&gt;&lt;/div&gt;&lt;script&gt;mboxCreate('myMboxName')&lt;/script&gt;</span> </p> </td> 
-   <td colname="col3"> <p>Be sure to include a <span class="codeph"> &lt;div class="mboxDefault"&gt;&lt;/div&gt;</span> tag before invoking <span class="codeph"> mboxCreate()</span>. at.js will not add one for you. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Target - Valid DOCTYPE</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/target/ov2/r_target-atjs-mboxcreate.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> An invalid DOCTYPE was detected. No mboxes will be fired in this scenario. </p> <p>For at.js, the DOCTYPE must be in Standards mode or Target will not work. </p> </td> 
-   <td colname="col3"> <p>Update the DOCTYPE on the page. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Test|Criteria|Recommendation|
+|--- |--- |--- |
+|Advertising Cloud - Conversion names use only alpha-numeric characters  Weight: 3|The  ev_conversion_property_name parameter should only contain numeric and decimal values EXCEPT for " ev_transid" parameter (the  ev_transid value can contain text or numeric values)  Look for  everesttech.net pixels that contain a URL parameter starting with  ev_.  Example:   http://pixel.everesttech.net/1180/t?ev_page_load=1&ev_revenue=$12&ev_transid=1hf74i47|Make sure your transaction property parameters only contain numeric and decimal values.   Warning:  Any other value types might cause data loss.|
+|Advertising Cloud - Conversion names use URL-safe characters  Weight: 3|Conversion property names should not contain an ampersand or question mark.   Example:   http://pixel.everesttech.net/1180/t?ev_revenue&order=12&ev_transid=|Make sure transaction property parameters do not contain a non-encoded ampersand or question mark. These break the URL format.   Warning: Property parameters that contain a non-encoded ampersand or question mark, (for example:  ev_formComplete?=1 or  ev_formComplete&Submit=1), might result in data loss.|
+|Advertising Cloud - Transaction ID Implemented Correctly  Weight: 1|The property name  ev_transid= should not be empty.  Example:   http://pixel.everesttech.net/1180/t?ev_page_load=1&ev_revenue= 12& ev_transid=|The property name  ev_transid= should not be left without a value ( ev_transid=). If this is left without a value, there could be transaction data loss. Assign a value to the  ev_transid= or remove the parameter from the pixel.|
+|Analytics - Instantiated in DOM  Weight: 5   Additional information|The Adobe Analytics code is either not installed or failing to execute. Returns 0 when no analytics code is found web page.|Verify that the Analytics tag is implemented on the page and is not blocked by subsequent script activities.|
+|Analytics - Instantiated once  Weight: 5   Additional information|The Adobe Analytics code was detected more than once on the page. . Returns 0 when no analytics code is found web page.|Make sure there is only one Analytics tag on the page.|
+|Analytics - Latest version  Weight: 3   Additional information|Your pages are not running the latest version of the Analytics code library. Code libraries that power Experience Cloud technologies are constantly being updated and tweaked in order to take advantage of performance improvements and provide the latest features. Returns 0 when no analytics code is found web page.|Install the latest version of the Analytics library.|
+|DTM - Self-Hosted  Weight: 4   Additional information|The DTM library is being hosted on Adobe's Akamai instance at  assets.adobedtm.com.   Self-hosting is the recommended approach for loading DTM because it provides greater control of website performance through cache control, reducing third-party script dependencies, and greater control of the publishing process. The DTM libraries can be hosted and managed through your own web hosting or CDN.|Self-hosting is the recommended approach for loading DTM on a page. Although DTM hosting via the Akamai CDN works in most cases, self-hosting improves page performance.|
+|DTM - Third-party tags load asynchronously after DOM ready  Weight: 3   Additional information|To strike a balance between a good user experience and collecting accurate data, 3rd party tags should be triggered at DOM ready. This will ensure that those tracking scripts execute while not impacting site functionality.|Resolve this issue by adjusting all rules that execute 3rd party pixels to fire at DOM Ready.|
+|Experience Cloud ID Service - Latest Version  Weight: 2   Additional information|Your pages are not running the latest version of the Visitor ID Service code library,  visitorAPI.js. Code libraries that power Experience Cloud technologies are constantly being updated and tweaked in order to take advantage of performance improvements and provide the latest features.|Install the latest version of the Visitor ID service library.|
+|Target - Latest version  Weight: 2   Additional information|Your pages are not running the latest version of the Target code library. Code libraries that power Experience Cloud technologies are constantly being updated and tweaked in order to take advantage of performance improvements and provide the latest features.|Install the latest version of the Target library.|
+|Target - mboxDefault precedes mboxCreate   Weight: 5   Additional information|The proper use of  mboxCreate looks similar to this:    <div class="mboxDefault"><!-Customer content--></div><script>mboxCreate('myMboxName')</script>|Be sure to include a  <div class="mboxDefault"></div> tag before invoking  mboxCreate(). at.js will not add one for you.|
+|Target - Valid DOCTYPE  Weight: 5   Additional information|An invalid DOCTYPE was detected. No mboxes will be fired in this scenario.  For at.js, the DOCTYPE must be in Standards mode or Target will not work.|Update the DOCTYPE on the page.|
+
 
 ![](assets/space.png)
 
@@ -120,22 +64,9 @@ This reference provides more information about the tests Auditor performs for ta
 
 Auditor evaluates whether the tags are consistent across URLs.
 
-<table id="table_4F9ED873BAF741D19BFB0F297B3A1FDB"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Test </th> 
-   <th colname="col2" class="entry"> Criteria </th> 
-   <th colname="col3" class="entry"> Recommendation </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>Analytics - Consistent code version </b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/sc/implement/choose-implementation-method.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> More than one version of the Analytics code was found. </p> </td> 
-   <td colname="col3"> <p>Replace all instances of Analytics with the current version. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Test|Criteria|Recommendation|
+|--- |--- |--- |
+|Analytics - Consistent code version   Weight: 5   Additional information|More than one version of the Analytics code was found.|Replace all instances of Analytics with the current version.|
 
 |  |
 |---|
@@ -148,76 +79,22 @@ This reference provides more information about the tests Auditor performs for ta
 
 Auditor evaluates whether the tag exists, and whether it's in the right place in your page code, and so on. 
 
-<table id="table_98A2E3F7B3154EEFA76D0CAE2FE97CAB"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Test </th> 
-   <th colname="col2" class="entry"> Criteria </th> 
-   <th colname="col3" class="entry"> Recommendation </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>Advertising Cloud - Code presence</b> </p> <p>Weight: 5 </p> </td> 
-   <td colname="col2"> <p> The Advertising Cloud tag is not available in the DOM. </p> </td> 
-   <td colname="col3"> <p>Implement the Advertising Cloud tag using the Advertising Cloud Launch Extension. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Advertising Cloud - Segment Pixel Implemented</b> </p> <p>Weight: 5 </p> </td> 
-   <td colname="col2"> <p> Upgrade your Advertising Cloud segment pixels to the new Advertising Cloud image-only tags. Using the deprecated AMO segment tags can result in data loss. </p> </td> 
-   <td colname="col3"> <p>Implement the Advertising Cloud segment pixel using the Advertising Cloud Launch Extension. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Analytics - Loaded in DOM</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/sc/implement/" format="https" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> The Adobe Analytics tag was not detected. </p> </td> 
-   <td colname="col3"> <p>Install the latest version of Analytics. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b> DTM - Library loaded</b> </p> <p>Weight: 5 </p> <p>Additional information: </p> <p> 
-     <ul id="ul_7E706EBC2E4649A69732E6982E116E22"> 
-      <li id="li_9AF0257E39C347A9AE6D8D8FFBD66B38"><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/c_Troubleshooting.html" format="html" scope="external"> DTM Troubleshooting</a> </li> 
-      <li id="li_7B422BCCD2654B0A9059799FB5276BE8"><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/t_add_header_fooder_code.html" format="html" scope="external"> Add header and footer code</a> </li> 
-     </ul> </p> </td> 
-   <td colname="col2"> <p> A global _satellite object was not found in the DOM. Dynamic Tag Management is either not installed or failing to execute. </p> </td> 
-   <td colname="col3"> <p>Verify that the DTM library is implemented on the page and is not blocked by subsequent script activities. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b> DTM - One embed code</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/code.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> Production sites should only load one DTM library. </p> </td> 
-   <td colname="col3"> <p>Verify that only the production library is loading on the page. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>DTM - pageBottom callback exists in &lt;body&gt;</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/t_add_header_fooder_code.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> The <span class="codeph"> _satellite.pageBottom()</span> callback was not found within the <span class="codeph"> &lt;body&gt;</span> of the page, which is required by Dynamic Tag Management. </p> <p>This test fails if the <span class="codeph"> pageBottom </span>call isn't found at all on the page, or if it's in the <span class="codeph"> &lt;head&gt;</span> tag (or some other unexpected location). It will only pass if <span class="codeph"> pageBottom</span> is found somewhere within the <span class="codeph"> &lt;body&gt;</span> tag. If it's not on the page at all, it won't function and the other two <span class="codeph"> pageBottom</span> tests will also fail. </p> </td> 
-   <td colname="col3"> <p>Add the inline script immediately prior to the closing <span class="codeph"> &lt;/body&gt;</span> tag to ensure proper DTM functionality. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>DTM - pageBottom tag fired</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/t_add_header_fooder_code.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> The DTM <span class="codeph"> pageBottom</span> tag was not detected. </p> <p>This could occur if the call is within an <span class="codeph"> if</span> statement that results in something similar to <span class="codeph"> if (false) {_satellite.pageBottom()}</span>. So, while it might exist and be correctly placed, the tag still might not fire. </p> </td> 
-   <td colname="col3"> <p>Install the DTM <span class="codeph"> pageBottom</span> call on every page. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Experience Cloud ID Service - Cookie presence</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/mcvid/mcvid-implementation-guides.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> The <span class="codeph"> AMCV_</span> cookie was not found. You must instantiate a visitor object from the <span class="codeph"> VisitorAPI.js</span> code. </p> </td> 
-   <td colname="col3"> <p> If this is a DTM implementation, verify that the AdobeOrg ID is properly entered into the MCID tool. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Experience Cloud ID Service - MID value present</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html#concept_37156268512445F287CD4BBB2839FFAA__section_C55AF54828DC4CCE89F6118655D694C8" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> The mid value was not found in the <span class="codeph"> AMCV_</span> cookie. </p> </td> 
-   <td colname="col3"> <p>Test again to check for any MCID API latency. If the condition persists, contact Adobe Customer Care. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b> Experience Cloud ID Service - Should be installed</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/mcvid/mcvid-overview.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> The Experience Cloud ID Service code was not found. The ECID is highly recommended to ensure you get the most value out of your Experience Cloud solutions and is critical to ID management across EC solutions. </p> </td> 
-   <td colname="col3"> <p>Please install the most recent version of MCID. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b> Target - Library loaded in &lt;head&gt;</b> </p> <p>Weight: 4 </p> <p><a href="https://docs.adobe.com/content/help/en/target/using/implement-target/implementing-target.html" format="html" scope="external"> Additional information</a> </p> 
-    <draft-comment>
-      TE61c380082a4b4706b28a84aa047599a7 
-    </draft-comment> </td> 
-   <td colname="col2"> <p> The Target library should be loaded in the <span class="codeph"> &lt;head&gt;</span> tag. </p> </td> 
-   <td colname="col3"> <p> Check to be sure that the Target library is loaded in the <span class="codeph"> &lt;head&gt;</span> tag. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Test|Criteria|Recommendation|
+|--- |--- |--- |
+|Advertising Cloud - Code presence  Weight: 5|The Advertising Cloud tag is not available in the DOM.|Implement the Advertising Cloud tag using the Advertising Cloud Launch Extension.|
+|Advertising Cloud - Segment Pixel Implemented  Weight: 5|Upgrade your Advertising Cloud segment pixels to the new Advertising Cloud image-only tags. Using the deprecated AMO segment tags can result in data loss.|Implement the Advertising Cloud segment pixel using the Advertising Cloud Launch Extension.|
+|Analytics - Loaded in DOM  Weight: 5   Additional information|The Adobe Analytics tag was not detected.|Install the latest version of Analytics.|
+|DTM - Library loaded  Weight: 5  Additional information:   
+      
+       DTM Troubleshooting  
+       Add header and footer code|A global _satellite object was not found in the DOM. Dynamic Tag Management is either not installed or failing to execute.|Verify that the DTM library is implemented on the page and is not blocked by subsequent script activities.|
+|DTM - One embed code  Weight: 5   Additional information|Production sites should only load one DTM library.|Verify that only the production library is loading on the page.|
+|DTM - pageBottom callback exists in <body>  Weight: 5   Additional information|The  _satellite.pageBottom() callback was not found within the  <body> of the page, which is required by Dynamic Tag Management.  This test fails if the  pageBottom call isn't found at all on the page, or if it's in the  <head> tag (or some other unexpected location). It will only pass if  pageBottom is found somewhere within the  <body> tag. If it's not on the page at all, it won't function and the other two  pageBottom tests will also fail.|Add the inline script immediately prior to the closing  </body> tag to ensure proper DTM functionality.|
+|DTM - pageBottom tag fired  Weight: 5   Additional information|The DTM  pageBottom tag was not detected.  This could occur if the call is within an  if statement that results in something similar to  if (false) {_satellite.pageBottom()}. So, while it might exist and be correctly placed, the tag still might not fire.|Install the DTM  pageBottom call on every page.|
+|Experience Cloud ID Service - Cookie presence  Weight: 5   Additional information|The  AMCV_ cookie was not found. You must instantiate a visitor object from the  VisitorAPI.js code.|If this is a DTM implementation, verify that the AdobeOrg ID is properly entered into the MCID tool.|
+|Experience Cloud ID Service - MID value present  Weight: 5   Additional information|The mid value was not found in the  AMCV_ cookie.|Test again to check for any MCID API latency. If the condition persists, contact Adobe Customer Care.|
+|Experience Cloud ID Service - Should be installed  Weight: 5   Additional information|The Experience Cloud ID Service code was not found. The ECID is highly recommended to ensure you get the most value out of your Experience Cloud solutions and is critical to ID management across EC solutions.|Please install the most recent version of MCID.|
+|Target - Library loaded in <head>  Weight: 4   Additional information  
+    
+      TE61c380082a4b4706b28a84aa047599a7|The Target library should be loaded in the  <head> tag.|Check to be sure that the Target library is loaded in the  <head> tag.|
+
