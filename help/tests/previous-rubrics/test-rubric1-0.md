@@ -84,17 +84,12 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
 |Advertising Cloud - Code presence  Weight: 5|The Advertising Cloud tag is not available in the DOM.|Implement the Advertising Cloud tag using the Advertising Cloud Launch Extension.|
 |Advertising Cloud - Segment Pixel Implemented  Weight: 5|Upgrade your Advertising Cloud segment pixels to the new Advertising Cloud image-only tags. Using the deprecated AMO segment tags can result in data loss.|Implement the Advertising Cloud segment pixel using the Advertising Cloud Launch Extension.|
 |Analytics - Loaded in DOM  Weight: 5   Additional information|The Adobe Analytics tag was not detected.|Install the latest version of Analytics.|
-|DTM - Library loaded  Weight: 5  Additional information:   
-      
-       DTM Troubleshooting  
-       Add header and footer code|A global _satellite object was not found in the DOM. Dynamic Tag Management is either not installed or failing to execute.|Verify that the DTM library is implemented on the page and is not blocked by subsequent script activities.|
+|DTM - Library loaded  Weight: 5  Additional information: DTM Troubleshooting - Add header and footer code|A global _satellite object was not found in the DOM. Dynamic Tag Management is either not installed or failing to execute.|Verify that the DTM library is implemented on the page and is not blocked by subsequent script activities.|
 |DTM - One embed code  Weight: 5   Additional information|Production sites should only load one DTM library.|Verify that only the production library is loading on the page.|
 |DTM - pageBottom callback exists in <body>  Weight: 5   Additional information|The  _satellite.pageBottom() callback was not found within the  <body> of the page, which is required by Dynamic Tag Management.  This test fails if the  pageBottom call isn't found at all on the page, or if it's in the  <head> tag (or some other unexpected location). It will only pass if  pageBottom is found somewhere within the  <body> tag. If it's not on the page at all, it won't function and the other two  pageBottom tests will also fail.|Add the inline script immediately prior to the closing  </body> tag to ensure proper DTM functionality.|
 |DTM - pageBottom tag fired  Weight: 5   Additional information|The DTM  pageBottom tag was not detected.  This could occur if the call is within an  if statement that results in something similar to  if (false) {_satellite.pageBottom()}. So, while it might exist and be correctly placed, the tag still might not fire.|Install the DTM  pageBottom call on every page.|
 |Experience Cloud ID Service - Cookie presence  Weight: 5   Additional information|The  AMCV_ cookie was not found. You must instantiate a visitor object from the  VisitorAPI.js code.|If this is a DTM implementation, verify that the AdobeOrg ID is properly entered into the MCID tool.|
 |Experience Cloud ID Service - MID value present  Weight: 5   Additional information|The mid value was not found in the  AMCV_ cookie.|Test again to check for any MCID API latency. If the condition persists, contact Adobe Customer Care.|
 |Experience Cloud ID Service - Should be installed  Weight: 5   Additional information|The Experience Cloud ID Service code was not found. The ECID is highly recommended to ensure you get the most value out of your Experience Cloud solutions and is critical to ID management across EC solutions.|Please install the most recent version of MCID.|
-|Target - Library loaded in <head>  Weight: 4   Additional information  
-    
-      TE61c380082a4b4706b28a84aa047599a7|The Target library should be loaded in the  <head> tag.|Check to be sure that the Target library is loaded in the  <head> tag.|
+|Target - Library loaded in <head>  Weight: 4   Additional information |The Target library should be loaded in the  <head> tag.|Check to be sure that the Target library is loaded in the  <head> tag.|
 
