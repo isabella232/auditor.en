@@ -11,7 +11,7 @@ uuid: 2ed2572e-ddb8-4899-b3a9-1329afdd7905
 
 ## Test rubric 1.0.1 {#topic-25ed23afdfaf4a12b149ff276965b043}
 
-## Alerts {#topic-1336e3975278436583e4215aa48f08a5}
+## Alerts {#alerts}
 
 This reference provides more information about the alerts Auditor displays for tests. 
 
@@ -128,7 +128,7 @@ Alerts show issues you should be aware of, but that don't affect your score. The
  </tbody> 
 </table>
 
-## Configuration {#topic-a5ebc362c9864209a2c3fdadcae35d18}
+## Configuration {#configuration}
 
 This reference provides more information about the tests Auditor performs for configuration. 
 
@@ -242,7 +242,7 @@ Configuration tests scan for specific settings, values, or potential conflicts i
  </tbody> 
 </table>
 
-## Tag consistency {#topic-a65cca9b5a294706b4069a93bc9c9d76}
+## Tag consistency {#tag-consistency}
 
 This reference provides more information about the tests Auditor performs for tag consistency. 
 
@@ -268,7 +268,7 @@ Auditor's consistency tests look for inconsistencies across all scanned pages. T
  </tbody> 
 </table>
 
-## Tag presence {#topic-10aeb8b878044ab38b815cabe136df1e}
+## Tag presence {#tag-presence}
 
 This reference provides more information about the tests Auditor performs for tag presence. 
 

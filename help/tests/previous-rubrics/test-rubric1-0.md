@@ -9,69 +9,32 @@ uuid: c62b7169-a650-4650-876f-c254eb57cb25
 
 # Test rubric 0.0.8{#test-rubric}
 
-## Test rubric 0.0.8 {#topic-66a340748ea54830967977f7c4c1d366}
+## Test rubric 0.0.8
 
 ![](assets/space.png)
 
-## Alerts {#topic-1336e3975278436583e4215aa48f08a5}
+## Alerts {#alerts}
 
 This reference provides more information about the alerts Auditor displays for tests. 
 
 Alerts show issues you should be aware of, but that don't affect your score.
 
-<table id="table_031432C9BB804A6F90E7FF572739E169"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Test </th> 
-   <th colname="col2" class="entry"> Criteria </th> 
-   <th colname="col3" class="entry"> Recommendation </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>Advertising Cloud - Correct Conversion Tag Implemented</b> </p> <p>Weight: 0 </p> </td> 
-   <td colname="col2"> <p>Check whether the correct conversion tag is used. </p> <p> <p>Warning:  Using the deprecated TubeMogul conversion tags can result in data loss. </p> </p> </td> 
-   <td colname="col3"> <p>Upgrade your conversion pixels to the new Advertising Cloud image-only conversion tags. </p> <p>This can be most easily accomplished with the Advertising Cloud Launch Extension. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Advertising Cloud - Image-only tag</b> </p> <p>Weight: 0 </p> </td> 
-   <td colname="col2"> <p>The Advertising Cloud image pixel format should match one of the following recommended formats: </p> <p> 
-     <ul id="ul_D85BE9C8A8654DE890E1A814E3573D86"> 
-      <li id="li_E2AEDD76AC7044E8AD6AE8375858D198"> <p><span class="codeph"> http(s)://rtd.tubemogul.com/upi/?sid=&lt;HASH_VALUE&gt;</span> </p> </li> 
-      <li id="li_1EEFA03516BF445294B5EC5DED891758"> <p><span class="codeph"> http(s)://rtd-tm.everesttech.net/upi/?sid=&lt;HASH_VALUE&gt;</span> </p> </li> 
-      <li id="li_F72206B142214217BDD34356D2F3D8AD"> <p><span class="codeph"> http(s)://pixel.everesttech.net/px2/&lt;NUMERIC_ID&gt;?</span> </p> </li> 
-     </ul> </p> </td> 
-   <td colname="col3"> <p>Upgrade your Advertising Cloud pixels to the new Advertising Cloud image-only tags, which ensure you are taking advantage of the full Advertising Cloud functionality. </p> <p>This can be most easily accomplished with the Advertising Cloud Launch Extension. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Advertising Cloud - Segment Pixels DSP Syncing Enabled</b> </p> <p>Weight: 0 </p> </td> 
-   <td colname="col2"> <p>Check whether the TubeMogul segment pixel contains a DSP Syncing setting, and recommend that the setting be added to the pixel. </p> <p>The DSP Syncing setting is determined by the use of a query string parameter, so </p> <p>IF the tag is being fired to<span class="codeph"> ("https://rtd.tubemogul.com/upi/?sid=&lt;HASH_VALUE&gt;"</span> </p> <p> OR <span class="codeph"> "http(s)://rtd-tm.everesttech.net/upi/?sid=&lt;HASH_VALUE&gt;"</span> </p> <p> OR <span class="codeph"> "http(s)://pixel.everesttech.net/px2/&lt;NUMERIC_ID&gt;?"</span> </p> <p>AND the tag contains the URL parameter <span class="codeph"> "sid=")</span> </p> <p>THEN check to see if the URL parameter <span class="codeph"> "cs=0"</span> or<span class="codeph"> "cs=1"</span> exists, and if not recommend that <span class="codeph"> "cs=1"</span> be added to those pixels so that the audience match rates can improve. </p> </td> 
-   <td colname="col3"> <p> Add the URL parameter <span class="codeph"> "cs=1"</span> to your Advertising Cloud pixels so that DSP Syncing can occur, which increases audience match rates. </p> <p>This can most easily be accomplished with the Advertising Cloud Launch Extension. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>DTM - pageBottom callback placement</b> </p> <p>Weight: 0 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/t_add_header_fooder_code.html" format="html" scope="external"> Additional information</a> </p> 
-    <draft-comment>
-      TEa9df69942f404055a64262889c8b21d3 
-    </draft-comment> </td> 
-   <td colname="col2"> <p> Dynamic Tag Management requires the<span class="codeph"> _satellite.pageBottom()</span> function. </p> <p>It is best practice that the tag be the <i>last</i> tag in the <span class="codeph"> &lt;body&gt;</span>. If it's found within the <span class="codeph"> &lt;body&gt;</span> tag, it has a chance of functioning, but as it is not best practice, it could function incorrectly or with unexpected or undesired results. </p> </td> 
-   <td colname="col3"> <p>Add the inline script immediately prior to the closing <span class="codeph"> &lt;/body&gt;</span> tag to ensure proper DTM functionality. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b> Experience Cloud ID Service - Use only one AdobeOrg</b> </p> <p>Weight: 0 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/mcvid/mcvid_id_request.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p>In a normal MCID implementation, a single AdobeOrg should be used. </p> </td> 
-   <td colname="col3"> <p>Validate that multiple AdobeOrg IDs exist for this implementation. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b> Target - Content in mboxDefault</b> </p> <p>Weight: 0 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/target/ov2/r_target-atjs-mboxcreate.html" format="html" scope="external"> Additional information</a> </p> </td> 
-   <td colname="col2"> <p> Content should exist in mboxDefault when using at.js. </p> </td> 
-   <td colname="col3"> <p>Verify that the content is available. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+|Test|Criteria|Recommendation|
+|--- |--- |--- |
+|Advertising Cloud - Correct Conversion Tag Implemented  Weight: 0|Check whether the correct conversion tag is used.   Warning:  Using the deprecated TubeMogul conversion tags can result in data loss.|Upgrade your conversion pixels to the new Advertising Cloud image-only conversion tags.  This can be most easily accomplished with the Advertising Cloud Launch Extension.|
+|Advertising Cloud - Image-only tag  Weight: 0|The Advertising Cloud image pixel format should match one of the following recommended formats: <br>http(s)://rtd.tubemogul.com/upi/?sid=<HASH_VALUE><br/>http(s)://rtd-tm.everesttech.net/upi/?sid=<HASH_VALUE><br/>http(s)://pixel.everesttech.net/px2/<NUMERIC_ID>?|Upgrade your Advertising Cloud pixels to the new Advertising Cloud image-only tags, which ensure you are taking advantage of the full Advertising Cloud functionality.  This can be most easily accomplished with the Advertising Cloud Launch Extension.|
+|Advertising Cloud - Segment Pixels DSP Syncing Enabled  Weight: 0|Check whether the TubeMogul segment pixel contains a DSP Syncing setting, and recommend that the setting be added to the pixel.  The DSP Syncing setting is determined by the use of a query string parameter, so  IF the tag is being fired to ("https://rtd.tubemogul.com/upi/?sid=<HASH_VALUE>"   OR  "http(s)://rtd-tm.everesttech.net/upi/?sid=<HASH_VALUE>"   OR  "http(s)://pixel.everesttech.net/px2/<NUMERIC_ID>?"  AND the tag contains the URL parameter  "sid=")  THEN check to see if the URL parameter  "cs=0" or "cs=1" exists, and if not recommend that  "cs=1" be added to those pixels so that the audience match rates can improve.|Add the URL parameter  "cs=1" to your Advertising Cloud pixels so that DSP Syncing can occur, which increases audience match rates.  This can most easily be accomplished with the Advertising Cloud Launch Extension.|
+|DTM - pageBottom callback placement  Weight: 0   Additional information <br/> TEa9df69942f404055a64262889c8b21d3|Dynamic Tag Management requires the _satellite.pageBottom() function.  It is best practice that the tag be the last tag in the  <body>. If it's found within the  <body> tag, it has a chance of functioning, but as it is not best practice, it could function incorrectly or with unexpected or undesired results.|Add the inline script immediately prior to the closing  </body> tag to ensure proper DTM functionality.|
+|Experience Cloud ID Service - Use only one AdobeOrg  Weight: 0   Additional information|In a normal MCID implementation, a single AdobeOrg should be used.|Validate that multiple AdobeOrg IDs exist for this implementation.|
+|Target - Content in mboxDefault  Weight: 0   Additional information|Content should exist in mboxDefault when using at.js.|Verify that the content is available.|
+
+
+
+
 
 ![](assets/space.png)
 
-## Configuration {#topic-a5ebc362c9864209a2c3fdadcae35d18}
+## Configuration {#configuration}
 
 This reference provides more information about the tests Auditor performs for configuration. 
 
@@ -151,7 +114,7 @@ Auditor evaluates the tags against other rules and recommended best practices.
 
 ![](assets/space.png)
 
-## Tag consistency {#topic-a65cca9b5a294706b4069a93bc9c9d76}
+## Tag consistency {#tag-consistency}
 
 This reference provides more information about the tests Auditor performs for tag consistency. 
 
@@ -179,7 +142,7 @@ Auditor evaluates whether the tags are consistent across URLs.
 
 ![](assets/space.png)
 
-## Tag presence {#topic-10aeb8b878044ab38b815cabe136df1e}
+## Tag presence {#tag-presence}
 
 This reference provides more information about the tests Auditor performs for tag presence. 
 
@@ -258,4 +221,3 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
   </tr> 
  </tbody> 
 </table>
-

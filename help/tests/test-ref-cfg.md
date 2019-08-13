@@ -11,7 +11,7 @@ uuid: d40d815c-edfe-48b9-921f-cea1b0b54a0a
 
 This reference provides more information about the tests Auditor performs for configuration.
 
-## Configuration {#topic-a5ebc362c9864209a2c3fdadcae35d18}
+## Configuration {#configuration}
 
 This reference provides more information about the tests Auditor performs for configuration. 
 
