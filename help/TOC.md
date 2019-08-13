@@ -13,7 +13,7 @@ user-guide-title: Experience Cloud Auditor Help
    + [Auditor videos](get-started/videos.md)
    + [Audit List page](get-started/audit-list.md)
 + Create an audit {#create-audit}
-   + [Create a new audit](create-audit/create-audit.md)
+   + [Create a new audit](create-audit/create-new-audit.md)
    + [Include and Exclude filters](create-audit/filters.md)
 + Reports {#reports}
    + [Scorecard](reports/scorecard.md)
