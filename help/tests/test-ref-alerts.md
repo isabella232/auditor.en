@@ -11,10 +11,6 @@ uuid: 8f05b3c1-2427-4691-a88f-1de98f120a02
 
 This reference provides more information about the alerts Auditor displays for tests.
 
-## Alerts {#alerts}
-
-This reference provides more information about the alerts Auditor displays for tests. 
-
 Alerts show issues you should be aware of, but that don't affect your score. These are best practice recommendations that, in some cases, may not apply to your implementation.
 
 <table id="table_031432C9BB804A6F90E7FF572739E169"> 

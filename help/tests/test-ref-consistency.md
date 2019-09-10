@@ -7,13 +7,9 @@ uuid: 16271dd6-3587-4f33-92f8-54ec4a3d6469
 
 ---
 
-# Tag consistency{#tag-consistency}
+# Tag consistency
 
 This reference provides more information about the tests Auditor performs for tag consistency.
-
-## Tag consistency {#tag-consistency}
-
-This reference provides more information about the tests Auditor performs for tag consistency. 
 
 Auditor's consistency tests look for inconsistencies across all scanned pages. These are values or configurations that should be the same across all pages on the site to ensure accurate data collection.
 

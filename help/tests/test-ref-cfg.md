@@ -7,13 +7,9 @@ uuid: d40d815c-edfe-48b9-921f-cea1b0b54a0a
 
 ---
 
-# Configuration{#configuration}
+# Configuration
 
 This reference provides more information about the tests Auditor performs for configuration.
-
-## Configuration {#configuration}
-
-This reference provides more information about the tests Auditor performs for configuration. 
 
 Configuration tests scan for specific settings, values, or potential conflicts in your implementation. Auditor evaluates the tags against other rules and recommended best practices.
 
