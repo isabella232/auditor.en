@@ -64,9 +64,6 @@ Auditor evaluates whether the tags are consistent across URLs.
 |--- |--- |--- |
 |Analytics - Consistent code version   Weight: 5   Additional information|More than one version of the Analytics code was found.|Replace all instances of Analytics with the current version.|
 
-|  |
-|---|
-
 ![](assets/space.png)
 
 ## Tag presence {#tag-presence}
