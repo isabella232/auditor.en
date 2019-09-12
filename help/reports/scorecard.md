@@ -4,7 +4,6 @@ seo-description: After you run a test, the scorecard shows information about an 
 seo-title: Scorecard
 title: Scorecard
 uuid: a765cd6a-d3d6-4438-9621-d7899385a518
-
 ---
 
 # Scorecard{#scorecard}

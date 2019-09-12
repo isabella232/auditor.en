@@ -19,8 +19,6 @@ The first time you use Auditor, you must complete and accept the Auditor agreeme
 
 ## Running your first scan {#task-b211597afed343cfa238443fcf7c6041}
 
-Task Context 
-
 1. Click on the menu button in the top right corner of the Adobe Experience Cloud navigation bar and click **[!UICONTROL Activation]**.
 
    ![](assets/activate.png)

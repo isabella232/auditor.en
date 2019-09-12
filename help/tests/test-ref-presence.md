@@ -39,24 +39,24 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
   <tr> 
    <td colname="col1"> <p><b> DTM - Library loaded</b> </p> <p>Weight: 5 </p> <p>Additional information: </p> <p> 
      <ul id="ul_7E706EBC2E4649A69732E6982E116E22"> 
-      <li id="li_9AF0257E39C347A9AE6D8D8FFBD66B38"><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/c_Troubleshooting.html" format="html" scope="external"> DTM Troubleshooting</a> </li> 
-      <li id="li_7B422BCCD2654B0A9059799FB5276BE8"><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/t_add_header_fooder_code.html" format="html" scope="external"> Add header and footer code</a> </li> 
+      <li id="li_9AF0257E39C347A9AE6D8D8FFBD66B38"><a href="https://docs.adobe.com/content/help/en/dtm/using/admin/c-troubleshooting.html" format="html" scope="external"> DTM Troubleshooting</a> </li> 
+      <li id="li_7B422BCCD2654B0A9059799FB5276BE8"><a href="https://docs.adobe.com/content/help/en/dtm/using/client-side/t-add-header-fooder-code.html" format="html" scope="external"> Add header and footer code</a> </li> 
      </ul> </p> </td> 
    <td colname="col2"> <p> A global _satellite object was not found in the DOM. Dynamic Tag Management is either not installed or failing to execute. </p> </td> 
    <td colname="col3"> <p>Verify that the DTM library is implemented on the page and is not blocked by subsequent script activities. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b> DTM - One embed code</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/code.html" format="html" scope="external"> Additional information</a> </p> </td> 
+   <td colname="col1"> <p><b> DTM - One embed code</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/dtm/using/client-side/code.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> Production sites should only load one DTM library. </p> </td> 
    <td colname="col3"> <p>Verify that only the production library is loading on the page. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>DTM - pageBottom callback exists in &lt;body&gt;</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/t_add_header_fooder_code.html" format="html" scope="external"> Additional information</a> </p> </td> 
+   <td colname="col1"> <p><b>DTM - pageBottom callback exists in &lt;body&gt;</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/dtm/using/client-side/t-add-header-fooder-code.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> The <span class="codeph"> _satellite.pageBottom()</span> callback was not found within the <span class="codeph"> &lt;body&gt;</span> of the page, which is required by Dynamic Tag Management. </p> <p>This test fails if the <span class="codeph"> pageBottom </span>call isn't found at all on the page, or if it's in the <span class="codeph"> &lt;head&gt;</span> tag (or some other unexpected location). It will only pass if <span class="codeph"> pageBottom</span> is found somewhere within the <span class="codeph"> &lt;body&gt;</span> tag. If it's not on the page at all, it won't function and the other two <span class="codeph"> pageBottom</span> tests will also fail. </p> </td> 
    <td colname="col3"> <p>Add the inline script immediately prior to the closing <span class="codeph"> &lt;/body&gt;</span> tag to ensure proper DTM functionality. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>DTM - pageBottom tag fired</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/t_add_header_fooder_code.html" format="html" scope="external"> Additional information</a> </p> </td> 
+   <td colname="col1"> <p><b>DTM - pageBottom tag fired</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/dtm/using/client-side/t-add-header-fooder-code.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> The DTM <code> pageBottom</code> tag was not detected. </p> <p>This could occur if the call is within an <code> if</code> statement that results in something similar to <code> if (false) {_satellite.pageBottom()}</code>. So, while it might exist and be correctly placed, the tag still might not fire. </p> </td> 
    <td colname="col3"> <p>Install the DTM <code> pageBottom</code> call on every page. </p> </td> 
   </tr> 
@@ -64,7 +64,7 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Experience Cloud ID Service - Code presence</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/mcvid/mcvid-overview.htmlimplementation-guides.html" format="html" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Experience Cloud ID Service - Code presence</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p>The Experience Cloud ID Service code was not found. The Experience Cloud ID (MCID) is highly recommended to ensure you get the most value out of your Experience Cloud solutions and is critical to ID management across Experience Cloud solutions. </p> </td> 
    <td colname="col3"> <p> Install the most recent version of MCID. </p> </td> 
   </tr> 
@@ -72,7 +72,7 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Experience Cloud ID Service - Cookie presence</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/mcvid/mcvid-implementation-guides.html" format="html" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Experience Cloud ID Service - Cookie presence</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/implementation-guides.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> The <span class="codeph"> AMCV_</span> cookie was not found. You must instantiate a visitor object from the <span class="codeph"> VisitorAPI.js</span> code. </p> </td> 
    <td colname="col3"> <p> If this is a DTM implementation, verify that the AdobeOrg ID is properly entered into the MCID tool. </p> </td> 
   </tr> 
@@ -80,7 +80,7 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Experience Cloud ID Service - MID value present</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/mcvid/mcvid_cookies.html#concept_37156268512445F287CD4BBB2839FFAA__section_C55AF54828DC4CCE89F6118655D694C8" format="html" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Experience Cloud ID Service - MID value present</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> The MID value was not found in the <span class="codeph"> AMCV_</span> cookie. </p> </td> 
    <td colname="col3"> <p>Test again to check for any MCID API latency. If the condition persists, contact Adobe Customer Care. </p> </td> 
   </tr> 
@@ -88,7 +88,7 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
    <td colname="col1"> 
     <draft-comment>
       1.0.5 
-    </draft-comment> <p><b> Launch - Library loaded</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobelaunch.com/getting-started" format="https" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b> Launch - Library loaded</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html" format="https" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> A global _satellite object was not found in the DOM. Launch is either not installed or failing to execute. </p> </td> 
    <td colname="col3"> <p>Verify that the Launch library is implemented on the page and is not blocked by subsequent script activities. </p> </td> 
   </tr> 
@@ -96,7 +96,7 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
    <td colname="col1"> 
     <draft-comment>
       1.0.5 
-    </draft-comment> <p><b>Launch - Not have multiple embed scripts</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobelaunch.com/getting-started" format="https" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Launch - Not have multiple embed scripts</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html" format="https" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p>There should not be multiple embed scripts loaded on the page. Production sites should only load one Launch library. </p> </td> 
    <td colname="col3"> <p>Verify that only the production library is loading on the page. </p> </td> 
   </tr> 
@@ -104,7 +104,7 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
    <td colname="col1"> 
     <draft-comment>
       1.0.5 
-    </draft-comment> <p><b>Launch - pageBottom callback exists in &lt;body&gt;</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobelaunch.com/getting-started" format="https" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Launch - pageBottom callback exists in &lt;body&gt;</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html" format="https" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> The <span class="codeph"> _satellite.pageBottom()</span> callback was not found within the <span class="codeph"> &lt;body&gt;</span> of the page, which is required by Launch. </p> <p>This test fails if the <span class="codeph"> pageBottom </span>call isn't found at all on the page, or if it's in the <span class="codeph"> &lt;head&gt;</span> tag (or some other unexpected location). It will only pass if <span class="codeph"> pageBottom</span> is found somewhere within the <span class="codeph"> &lt;body&gt;</span> tag. If it's not on the page at all, it won't function and the other two <span class="codeph"> pageBottom</span> tests will also fail. </p> </td> 
    <td colname="col3"> <p>Add the inline script immediately prior to the closing <span class="codeph"> &lt;/body&gt;</span> tag to ensure proper Launch functionality. </p> </td> 
   </tr> 
@@ -112,7 +112,7 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
    <td colname="col1"> 
     <draft-comment>
       1.0.5 
-    </draft-comment> <p><b>Launch - pageBottom callback should not exist when asynchronously deployed</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobelaunch.com/getting-started" format="https" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Launch - pageBottom callback should not exist when asynchronously deployed</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html" format="https" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p>The <span class="codeph"> _satellite.pageBottom()</span> callback was found on the page, which should not be the case when Launch is asynchronously deployed. </p> </td> 
    <td colname="col3"> <p>Remove the<span class="codeph"> _satellite.pageBottom()</span> script to enable proper Launch functionality. </p> </td> 
   </tr> 
@@ -131,4 +131,3 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
   </tr> 
  </tbody> 
 </table>
-
