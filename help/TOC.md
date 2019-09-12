@@ -4,10 +4,9 @@ product: adobe experience cloud
 sub-product: auditor
 archetype: end-user
 user-guide-title: Experience Cloud Auditor Help
-
 ---
 
-# Table of Contents {#using}
+# Experience Cloud Auditor Help {#using}
 
 + [Overview](overview.md)
 + Getting started {#get-started}

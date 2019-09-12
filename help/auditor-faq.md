@@ -4,12 +4,9 @@ seo-description: null
 seo-title: Auditor FAQ
 title: Auditor FAQ
 uuid: 4db0781a-b288-4ec2-97ff-410a8241a61d
-
 ---
 
 # Auditor FAQ{#auditor-faq}
-
-## Auditor FAQ {#topic-aa22f86da60a49c090aeaaa3aa241cdb}
 
 This article contains the answers to frequently asked questions about Adobe Experience Platform Auditor.
 

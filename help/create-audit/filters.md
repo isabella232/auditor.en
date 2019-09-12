@@ -4,7 +4,6 @@ seo-description: Include filters restrict what links an audit can crawl from the
 seo-title: Include and Exclude filters
 title: Include and Exclude filters
 uuid: 477fc38c-7351-42dd-8209-2fb7549ee34c
-
 ---
 
 # Include and Exclude filters{#include-and-exclude-filters}

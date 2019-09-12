@@ -4,12 +4,9 @@ seo-description: Adobe Experience Cloud Auditor Release Notes
 seo-title: Auditor release notes
 title: Auditor release notes
 uuid: 2e1eb2de-f162-45af-a9b0-15dbdac5531d
-
 ---
 
 # Auditor release notes{#auditor-release-notes}
-
-## Auditor release notes {#topic-8fa9e41bc3a54240b1873cebe36b75b1}
 
 ## February 5, 2019 {#section-f73142fd7c85492a806c7fc19a33a525}
 

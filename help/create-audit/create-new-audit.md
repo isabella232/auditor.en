@@ -4,7 +4,6 @@ seo-description: Create a new audit in Auditor
 seo-title: Create a new audit in Auditor
 title: Create a new audit in Auditor
 uuid: bd6798bb-3fab-4091-9e07-d3d1e5fdd087
-
 ---
 
 # Create a new audit{#create-a-new-audit}
@@ -66,5 +65,3 @@ If desired, use the link on the bottom of the page to access a free, full-featur
    ![](assets/test-advanced-filters.png)
 
 1. Click **[!UICONTROL Run Report]**.
-
-   Step Result 
