@@ -1,8 +1,8 @@
 ---
 cloud: experience-cloud
-product: adobe experience cloud
+product: auditor
 sub-product: auditor
-archetype: end-user
+audience: end-user
 user-guide-title: Experience Cloud Auditor Help
 ---
 
