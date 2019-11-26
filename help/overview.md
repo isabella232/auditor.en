@@ -1,14 +1,14 @@
 ---
-description: Technical documentation for Experience Cloud Auditor.
-seo-description: Technical documentation for Adobe Experience Cloud Auditor.
-seo-title: Technical documentation for Adobe Experience Cloud Auditor 
-title: Overview of Adobe Experience Cloud Auditor - Tech Docs
+description: Technical documentation for Experience Platform Auditor.
+seo-description: Technical documentation for Adobe Experience Platform Auditor.
+seo-title: Technical documentation for Adobe Experience Platform Auditor 
+title: Overview of Adobe Experience Platform Auditor - Tech Docs
 uuid: 346132cb-d78d-4573-8edd-dbaa4c3bb05d
 ---
 
-# Adobe Experience Cloud Auditor Overview {#adobe-experience-cloud-auditor}
+# Adobe Experience Platform Auditor Overview {#adobe-experience-cloud-auditor}
 
-Adobe Experience Cloud Auditor is a service of the Adobe Experience Cloud that was co-developed with [ObservePoint](https://www.observepoint.com/), experts in validating digital implementations. This guide contains technical documnetation and self-help for Auditor.
+Adobe Experience Platform Auditor is a service of the Adobe Experience Platform that was co-developed with [ObservePoint](https://www.observepoint.com/), experts in validating digital implementations. This guide contains technical documnetation and self-help for Auditor.
 
 With Auditor, Adobe Experience Cloud users receive a report that grades their Adobe Experience Cloud implementation and gives pointers on how to improve it. Auditor helps you get more value from your Adobe products, individually and collectively.
 
