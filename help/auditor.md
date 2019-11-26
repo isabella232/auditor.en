@@ -1,19 +1,15 @@
 ---
-description: Adobe Experience Cloud Auditor is a service of the Adobe Experience Cloud that was co-developed with ObservePoint, experts in validating digital implementations.
-seo-description: Adobe Experience Cloud Auditor is a service of the Adobe Experience Cloud that was co-developed with ObservePoint, experts in validating digital implementations.
-seo-title: Adobe Experience Cloud Auditor
-title: Adobe Experience Cloud Auditor
+description: Adobe Experience Platform Auditor is a service of the Adobe Experience Platform that was co-developed with ObservePoint, experts in validating digital implementations.
+seo-description: Adobe Experience Platform Auditor is a service of the Adobe Experience Platform that was co-developed with ObservePoint, experts in validating digital implementations.
+seo-title: Adobe Experience Platform Auditor
+title: Adobe Experience Platform Auditor
 uuid: 346132cb-d78d-4573-8edd-dbaa4c3bb05d
 
 ---
 
-# Adobe Experience Cloud Auditor{#adobe-experience-cloud-auditor}
+# Adobe Experience Platform Auditor{#adobe-experience-cloud-auditor}
 
-Adobe Experience Cloud Auditor is a service of the Adobe Experience Cloud that was co-developed with ObservePoint, experts in validating digital implementations.
-
->[!NOTE]
->
->Access to Auditor is being granted in a rolling fashion. All customers will have access by the end of April, 2018.
+Adobe Experience Platform Auditor is a service of the Adobe Experience Platform that was co-developed with ObservePoint, experts in validating digital implementations.
 
 With Auditor, Adobe Experience Cloud users receive a report that grades their Adobe implementation and gives pointers on how to improve it. Auditor helps you get more value from your Adobe products, individually and collectively.
 

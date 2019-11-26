@@ -3,10 +3,10 @@ cloud: experience-cloud
 product: auditor
 sub-product: auditor
 audience: end-user
-user-guide-title: Experience Cloud Auditor Help
+user-guide-title: Experience Platform Auditor Help
 ---
 
-# Experience Cloud Auditor Help {#using}
+# Experience Platform Auditor Help {#using}
 
 + [Overview](overview.md)
 + Getting started {#get-started}
