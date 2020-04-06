@@ -49,7 +49,7 @@ Configuration tests scan for specific settings, values, or potential conflicts i
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Analytics - Instantiated in DOM</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/sc/implement/impl_testing.html" format="html" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Analytics - Instantiated in DOM</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/analytics/implementation/home.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> The Adobe Analytics code is either not installed or failing to execute. Returns 0 when no analytics code is found web page. </p> </td> 
    <td colname="col3"> <p>Verify that the Analytics tag is implemented on the page and is not blocked by subsequent script activities. </p> </td> 
   </tr> 
@@ -57,7 +57,7 @@ Configuration tests scan for specific settings, values, or potential conflicts i
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Analytics - Instantiated once</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/sc/implement/" format="https" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Analytics - Instantiated once</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/analytics/implementation/home.html" format="https" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> The Adobe Analytics code was detected more than once on the page. . Returns 0 when no analytics code is found web page. </p> </td> 
    <td colname="col3"> <p>Make sure there is only one Analytics tag on the page. </p> </td> 
   </tr> 
@@ -65,7 +65,7 @@ Configuration tests scan for specific settings, values, or potential conflicts i
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Analytics - Latest version</b> </p> <p>Weight: 3 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/sc/appmeasurement/release" format="https" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Analytics - Latest version</b> </p> <p>Weight: 3 </p> <p><a href="https://docs.adobe.com/content/help/en/analytics/implementation/appmeasurement-updates.html" format="https" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> Your pages are not running the latest version of the Analytics code library. Code libraries that power Experience Cloud technologies are constantly being updated and tweaked in order to take advantage of performance improvements and provide the latest features. Returns 0 when no analytics code is found web page. </p> </td> 
    <td colname="col3"> <p>Install the latest version of the Analytics library. </p> </td> 
   </tr> 
@@ -73,7 +73,7 @@ Configuration tests scan for specific settings, values, or potential conflicts i
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>DTM - Third-party tags load asynchronously after DOM ready</b> </p> <p>Weight: 3 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/load_order.html" format="html" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>DTM - Third-party tags load asynchronously after DOM ready</b> </p> <p>Weight: 3 </p> <p><a href="https://docs.adobe.com/content/help/en/dtm/using/resources/load-order.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p>To strike a balance between a good user experience and collecting accurate data, 3rd party tags should be triggered at DOM ready. This will ensure that those tracking scripts execute while not impacting site functionality. </p> </td> 
    <td colname="col3"> <p>Resolve this issue by adjusting all rules that execute 3rd party pixels to fire at DOM Ready. </p> </td> 
   </tr> 
@@ -81,7 +81,7 @@ Configuration tests scan for specific settings, values, or potential conflicts i
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Experience Cloud ID Service - Latest Version</b> </p> <p>Weight: 2 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/dtm/macid.html" format="html" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Experience Cloud ID Service - Latest Version</b> </p> <p>Weight: 2 </p> <p><a href="https://docs.adobe.com/content/help/en/dtm/using/tools/macid.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> Your pages are not running the latest version of the Visitor ID Service code library, <span class="codeph"> visitorAPI.js</span>. Code libraries that power Experience Cloud technologies are constantly being updated and tweaked in order to take advantage of performance improvements and provide the latest features. </p> </td> 
    <td colname="col3"> <p>Install the latest version of the Visitor ID service library. </p> </td> 
   </tr> 
@@ -89,7 +89,7 @@ Configuration tests scan for specific settings, values, or potential conflicts i
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Launch - Latest Version</b> </p> <p>Weight: 2 </p> <p><a href="https://docs.adobelaunch.com/getting-started" format="https" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Launch - Latest Version</b> </p> <p>Weight: 2 </p> <p><a href="https://adobe.com/go/launch_help_get_started" format="https" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p>These pages are not running the latest version of the Launch code library (Turbine). Code libraries that power Experience Cloud technologies are constantly being updated and tweaked in order to take advantage of performance improvements and provide the latest features. </p> </td> 
    <td colname="col3"> <p> Update the Launch library by rebuilding and publishing the Launch library. </p> </td> 
   </tr> 
@@ -97,7 +97,7 @@ Configuration tests scan for specific settings, values, or potential conflicts i
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Target - Latest version</b> </p> <p>Weight: 2 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/target/dtm/update-target-tool.html" format="html" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Target - Latest version</b> </p> <p>Weight: 2 </p> <p><a href="https://docs.adobe.com/content/help/en/dtm/implementing/target/update-target-tool.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> Your pages are not running the latest version of the Target code library. Code libraries that power Experience Cloud technologies are constantly being updated and tweaked in order to take advantage of performance improvements and provide the latest features. </p> </td> 
    <td colname="col3"> <p>Install the latest version of the Target library. </p> </td> 
   </tr> 
@@ -105,7 +105,7 @@ Configuration tests scan for specific settings, values, or potential conflicts i
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Target - mboxDefault precedes mboxCreate </b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/target/ov2/r_target-atjs-mboxcreate.html" format="html" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Target - mboxDefault precedes mboxCreate </b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p>The proper use of <span class="codeph"> mboxCreate</span> looks similar to this: </p> <p> <span class="codeph"> &lt;div class="mboxDefault"&gt;&lt;!-Customer content--&gt;&lt;/div&gt;&lt;script&gt;mboxCreate('myMboxName')&lt;/script&gt;</span> </p> </td> 
    <td colname="col3"> <p>Be sure to include a <span class="codeph"> &lt;div class="mboxDefault"&gt;&lt;/div&gt;</span> tag before invoking <span class="codeph"> mboxCreate()</span>. at.js will not add one for you. </p> </td> 
   </tr> 
@@ -113,7 +113,7 @@ Configuration tests scan for specific settings, values, or potential conflicts i
    <td colname="col1"> 
     <draft-comment>
       1.0.1 
-    </draft-comment> <p><b>Target - Valid DOCTYPE</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/target/ov2/r_target-atjs-mboxcreate.html" format="html" scope="external"> Additional information</a> </p> </td> 
+    </draft-comment> <p><b>Target - Valid DOCTYPE</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/help/en/target/using/implement-target/client-side/faq-at-js/target-atjs-faq.html#what-html-doctype-does-atjs-require" format="html" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> An invalid DOCTYPE was detected. No mboxes will be fired in this scenario. </p> <p>For at.js, the DOCTYPE must be in Standards mode or Target will not work. </p> </td> 
    <td colname="col3"> <p>Update the DOCTYPE on the page. </p> </td> 
   </tr> 

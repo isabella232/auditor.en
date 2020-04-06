@@ -32,7 +32,7 @@ Auditor evaluates whether the tag exists, and whether it's in the right place in
    <td colname="col3"> <p>Implement the Advertising Cloud segment pixel using the Advertising Cloud Launch Extension. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Analytics - Loaded in DOM</b> </p> <p>Weight: 5 </p> <p><a href="https://experiencecloud.adobe.com/resources/help/en_US/sc/implement/" format="https" scope="external"> Additional information</a> </p> </td> 
+   <td colname="col1"> <p><b>Analytics - Loaded in DOM</b> </p> <p>Weight: 5 </p> <p><a href="https://docs.adobe.com/content/help/en/analytics/implementation/home.html" format="https" scope="external"> Additional information</a> </p> </td> 
    <td colname="col2"> <p> The Adobe Analytics tag was not detected. </p> </td> 
    <td colname="col3"> <p>Install the latest version of Analytics. </p> </td> 
   </tr> 

@@ -43,7 +43,3 @@ The following Adobe solutions are not currently included in the test rubric. Sup
 * Audience Manager 
 * Campaign 
 * Launch
-
-## Test Categories {#section-630181db21ef4eec9ce6a13a0482bb55}
-
-This Test Reference divides the tests into the following categories: 
