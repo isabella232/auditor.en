@@ -19,7 +19,7 @@ This article contains the answers to frequently asked questions about Adobe Expe
 * [What information is provided in a report?](auditor-faq.md#section-752d6b82f6744a3182c4ce16ea6b5d3f) 
 * [How actionable is that information?](auditor-faq.md#section-9308c1ea882048b781087ae6d2eee9f0) 
 * [Can Auditor audit non-Adobe technology?](auditor-faq.md#section-f6e73c56083b4815bbf901296038bcd4) 
-* [Can I whitelist my IP addresses to allow scanning pages...](auditor-faq.md#section-011e4f54c58140ffb93bedeb0745b6cc) 
+* [Can I approve my IP addresses to allow scanning pages...](auditor-faq.md#section-011e4f54c58140ffb93bedeb0745b6cc) 
 * [Does Auditor use the same IP ranges as Observepoint?](auditor-faq.md#section-39512b156e194787981bdd572ff5b5a9)
 
 ## What is Auditor? {#section-c4a9bc8d8eef41598c27e0951a2518e4}
@@ -122,7 +122,7 @@ All the recommendations given through Auditor are intended to help you take acti
 
 No. However, ObservePoint’s full offering allows customers to audit and monitor all of your marketing tags and technologies. As an Adobe customer you have access to a complimentary trial account. To access your trial account visit [ObservePoint’s Auditor Page](https://www.observepoint.com/adobe-auditor/?utm_source=Adobe&utm_medium=Auditor&utm_campaign=Premium).
 
-## Can I whitelist my IP addresses to allow scanning pages that are protected by a login? {#section-011e4f54c58140ffb93bedeb0745b6cc}
+## Can I approve my IP addresses to allow scanning pages that are protected by a login? {#section-011e4f54c58140ffb93bedeb0745b6cc}
 
 This functionality is currently unsupported without the full ObservePoint offering.
 
